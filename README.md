@@ -5,6 +5,9 @@
 Create a `.env` file in the root directory with the following variables:
 
 ```env
+# App URL
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+
 # Database
 DATABASE_URL="postgresql://username:password@localhost:5432/your_database_name"
 
@@ -19,6 +22,7 @@ NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
 
 ### Variable Details:
 
+- `NEXT_PUBLIC_APP_URL`: Your application's URL (in production, this would be your deployed URL)
 - `DATABASE_URL`: Your PostgreSQL connection string
 - `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY`: Public key from your Clerk dashboard
 - `CLERK_SECRET_KEY`: Secret key from your Clerk dashboard

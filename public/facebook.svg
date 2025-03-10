@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="38" viewBox="0 0 38 38">
+  <defs>
+    <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 54 100">
+      <image width="54" height="100" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAABkCAYAAADNA8MhAAAABHNCSVQICAgIfAhkiAAAA1BJREFUeF7tmk2IjlEUxz3KlEQiTUNkwYJZCflYIBY2UlgpJZtZUFbKaJSPRNRgQ2QjC0kSSllIU1NsZCFkMln4/khK42PD63f0jHh7vff2nvM8z7idW6ep57n3nvs79/zvfe6dNxtVcanValMYwiJsMbYAW4hNajCsrzx7jb3EXmHPsc95vSH+PsYGsix7Is+yKriA2YTftTnQDOMxfKK/XaWCAdSF093YdGOY+u6OlQIG0Ho892IzCwYa7r5YMIDG4ekUJqlXZjla2IwBJQvATWxemUS5r+OFgAE1AQe3sc4KoMSl/YwBNZqOb2HLK4ISt/YzBtghOu6uEMoeDKhVua4q5jJMxTwFByCaVTWVaSoCtpUOT4wAKNvFA7Bn9Fj0F0Vs3GwWD6BW4/FGrNcS6pmBnWewG0sYcKwLPRizNQZvH7DxsV5LqGcCVuYSL+evN5icy743CdBF9ScVM9aDgwMFzoKk+TWsn0OkHDCjigXYVTzJodG6DIpugbnbSscWYA9xPLcV503aPODdSqDet9qvBdgXnI9tdQAN2n3jWSdQTzV9qsDQ10Scf9QMoEHb/UDt0fapBWtnALJKWZUaHXUA9lbboRZsKgOQ6zCrcg+o+RadacE6GET0Ehwx4JOAbYuoF6yiBZuGhxdBL/EV9gK2L776v2tqwaxTsRuwwyMBzHrGdgJ2xMGaRECbij5jkenlqRgKlKdiowjxregaC6VO/t41FgqUa+y/0xgLQF9oWpu8b+PdEkX7+qZyapZfA2jKfT7LtmeAyeEupXIOsM0pgvUAdjBFsA2AXU4RTG64HqUGJtfebYD9SA1sEKjZshKmBnYdsDUpgvUCtiNFsC7AzqQItgyw/hTB2gF7lxrYEFC//12c0qp4B7Clwx+9KYGdBWxLimB/XY+nNGPrmLErKc7YHMDkJ+q/iszYCsUpczJtLyna1zc9zYMLrfQHVN+f7fwyp1EU/cI0Prf8wjQUK9eYayyUI83fu8ZC8XONucZCOeIa00XINeYa02WQ72Oh+LnGXGOhHPF9TBch15hrTJdBvo+F4ucac42FcsT3MV2EXGOuMV0G+T4Wip9rzDUWyhHfx3QRco25xnQZ5PtYKH6uMddYKEdK2sd+AlLtA+/lJALYAAAAAElFTkSuQmCC"/>
+    </pattern>
+  </defs>
+  <g id="facebook" transform="translate(-300.5 -4599)">
+    <circle id="Ellipse_11860" data-name="Ellipse 11860" cx="19" cy="19" r="19" transform="translate(300.5 4599)" fill="#f60"/>
+    <rect id="Icon_awesome-facebook-f" data-name="Icon awesome-facebook-f" width="8" height="15" transform="translate(315.5 4611)" fill="url(#pattern)"/>
+  </g>
+</svg>

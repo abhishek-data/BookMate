@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useRef, useEffect } from "react";
 import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Button } from "@/components/ui/button";
@@ -16,7 +18,7 @@ import { createEvent } from "@/actions/events";
 import { useRouter } from "next/navigation";
 import useFetch from "@/hooks/use-fetch";
 
-const EventForm = ({ onSubmitForm, initialData = {} }) => {
+const EventForm = ({ autoFocus }) => {
   const router = useRouter();
   const {
     register,
@@ -26,19 +28,26 @@ const EventForm = ({ onSubmitForm, initialData = {} }) => {
   } = useForm({
     resolver: zodResolver(eventSchema),
     defaultValues: {
-      title: initialData.title || "",
-      description: initialData.description || "",
-      duration: initialData.duration || 30,
-      isPrivate: initialData.isPrivate ?? true,
+      title: "",
+      description: "",
+      duration: 30,
+      isPrivate: true,
     },
   });
 
   const { loading, error, fn: fnCreateEvent } = useFetch(createEvent);
 
+  const titleRef = useRef(null);
+
+  useEffect(() => {
+    if (autoFocus && titleRef.current) {
+      titleRef.current.focus();
+    }
+  }, [autoFocus]);
+
   const onSubmit = async (data) => {
     await fnCreateEvent(data);
-    if (!loading && !error) onSubmitForm();
-    router.refresh(); // Refresh the page to show updated data
+    router.refresh();
   };
 
   return (
@@ -54,7 +63,12 @@ const EventForm = ({ onSubmitForm, initialData = {} }) => {
           Event Title
         </label>
 
-        <Input id="title" {...register("title")} className="mt-1" />
+        <Input
+          id="title"
+          {...register("title")}
+          className="mt-1"
+          ref={titleRef}
+        />
 
         {errors.title && (
           <p className="text-red-500 text-xs mt-1">{errors.title.message}</p>
